@@ -46,7 +46,7 @@ trusted-host=mirrors.aliyun.com
 
 ```
 ~ mkdir .pip	# 在家目录下创建一个.pip目录
-~ cd pip
+~ cd .pip
 ~ touch pip.conf # 创建一个pip配置文件
 # 写入配置
 [global]
