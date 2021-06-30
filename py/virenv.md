@@ -167,3 +167,43 @@ $ lssitepackages
 ```
 
 更多内容，可查看 官方文档 https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html
+
+
+
+## WORKON_HOME
+
+```py
+pip install pipenv
+pipenv install --python 3.7.8
+pipenv shell
+```
+
+
+
+## ISSUE
+
+### 1. UPX is not available
+
+https://upx.github.io/
+
+
+
+### 2. pyinstaller打包成exe后运行出错。报Failed to execute script XXXX
+
+通过不带-w的参数打包在控制台看程序执行情况。
+
+
+
+C:\Python37\Lib\site-packages\PySide2\__init__.py
+
+```py
+    import sys
+    import os
+    dir_name = os.path.dirname(__file__)
+    plugin_path = os.path.join(dir_name, 'plugins', 'platforms')
+    os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = plugin_path
+```
+
+
+
+D:\yang\testcode\pyenv\M30G_HB_V1.0.1-LzumDEdF\Scripts\pyinstaller.exe --noconfirm --onefile --windowed --icon D:\yang\testcode\M30G_HB_V1.0.1\epds_logo.ico test_app.py
