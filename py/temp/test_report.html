@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${title}</title>
+    <style type="text/css">
+        body {background-color:white;}
+        .report-title {
+            /* font-size: 1.17em;
+            font-weight: bold; */
+            text-align: center;  
+        }
+        .emphasize {
+            color: blue;
+            font-weight: bold;
+        }
+        table, th, td {
+            border: 1px solid black;       
+        }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+}
+        </style>
+</head>
+<body>
+    <h2 class="report-title">Test Report</h2>
+    <h3>Serial Number: {{serial_num}} </h3>
+    <h3>Start Time: {{start_time}}</h3>
+    <h3>Stop Time: {{stop_time}}</h3>
+    <h3>Test Station: {{test_station}}</h3>
+    <h3>Test Operator: {{test_operator}} </h3>
+    <h3>Test Cell: {{test_cell}}</h3>
+    <h3>Test Result: <span class="emphasize">{{test_result}}</span></h3>
+    <h3>Test Script: {{test_script}}</h3>
+    <h3>Elapsed Time: {{elapsed_time}}</h3>
+    <h3>Total Execution Time: {{total_exec_time}}</h3>
+
+
+    <table>
+        <tr>
+            <th width="20%">TestGroup</th>
+            <th width="20%">TestName</th>
+            <th width="10%">TestStatus</th>
+            <th width="10%">LowerLimit</th>
+            <th width="10%">UpperLimit</th>
+            <th width="15%">Measurement</th>
+            <th width="15%">MeasurementUnit</th>
+            <th width="15%">Elapsed Time</th>
+        </tr>
+      {% for row in table_rows %}
+        <tr>
+            <td>{{row.test_group}}</td>
+            <td>{{row.test_name}}</td>
+            <td>{{row.test_status}}</td>
+            <td>{{row.lower_limit}}</td>
+            <td>{{row.upper_limit}}</td>
+            <td>{{row.measurement}}</td>
+            <td>{{row.measure_unit}}</td>
+            <td>{{row.cost_time}}</td>
+        </tr>
+      {% endfor %}
+    </table>
+    
+
+
+</body>
+</html>
+
+
