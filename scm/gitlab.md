@@ -64,6 +64,9 @@ Then, you can start your GitLab instance by running the following command:
 
 192.168.2.167
 
++ [gitlab-ce_14.0.1-ce.0_arm64.deb](https://packages.gitlab.com/gitlab/gitlab-ce/packages/ubuntu/focal/gitlab-ce_14.0.1-ce.0_arm64.deb)
++ [install doc](https://docs.gitlab.com/omnibus/installation/)
+
 
 
 root 2Wsx3edc
@@ -77,3 +80,8 @@ root 2Wsx3edc
 
 + 添加用户
   + http://192.168.2.167/admin/users
+
+
+
+[gitlab新建项目过程和添加用户](https://blog.csdn.net/weiqiang0124/article/details/80803280)
+
