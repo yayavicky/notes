@@ -24,13 +24,21 @@ PEP是Python Enhancement Proposals的缩写，翻译过来就是「Python增强�
 7. PEP 342 -- Coroutines via Enhanced Generators 协程和yield
 8. PEP 380 -- Syntax for Delegating to a Subgenerator yield from语法
 9. PEP 443 -- Single-dispatch generic functions Python 3的singledispatch装饰器
-10. PEP 492 -- Coroutines with async and await syntax 协程与async/await语法
-11. PEP 498 -- Literal String Interpolation Python 3.6新加的「格式化字符串字面量」，我看现在很多人都还不怎么用
-12. PEP 525 -- Asynchronous Generators异步生成器
-13. PEP 3101 -- Advanced String Formatting 字符串格式化
-14. https://www.python.org/dev/peps/pep-3105/ 介绍为啥把print改成函数
-15. PEP 3115 -- Metaclasses in Python 3000 Python3的元类
-16. PEP 3119 -- Introducing Abstract Base Classes 抽象基类，不止一次看到有人用的abc模块都是错误的
-17. PEP 3135 -- New Super Python 3中的super
-18. PEP 3148 -- futures - execute computations asynchronously 我老提的concurrent.futures
-19. PEP 3156 -- Asynchronous IO Support Rebooted: the asyncio Module 啥也不说了，asyncio模块
+10. PEP 484 -- Type Hints https://www.python.org/dev/peps/pep-0484/
+11. PEP 492 -- Coroutines with async and await syntax 协程与async/await语法
+12. PEP 498 -- Literal String Interpolation Python 3.6新加的「格式化字符串字面量」，我看现在很多人都还不怎么用
+13. PEP 525 -- Asynchronous Generators异步生成器
+14. PEP 3101 -- Advanced String Formatting 字符串格式化
+15. https://www.python.org/dev/peps/pep-3105/ 介绍为啥把print改成函数
+16. PEP 3115 -- Metaclasses in Python 3000 Python3的元类
+17. PEP 3119 -- Introducing Abstract Base Classes 抽象基类，不止一次看到有人用的abc模块都是错误的
+18. PEP 3135 -- New Super Python 3中的super
+19. PEP 3148 -- futures - execute computations asynchronously 我老提的concurrent.futures
+20. PEP 3156 -- Asynchronous IO Support Rebooted: the asyncio Module 啥也不说了，asyncio模块
+
+
+
+## 主题
+
+1. [typing --- 类型标注支持](https://docs.python.org/zh-cn/3.7/library/typing.html)
+2. 

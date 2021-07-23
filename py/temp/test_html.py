@@ -1,50 +1,16 @@
-# 
-# from mako.template import Template
-from jinja2 import Template
-# mytemplate = Template(filename='test1.html')
+import re
+abc_1 ="0030304167/F/1/0110053039080371SR"
+abc_2 ="0030249016/G//10054179410008SR"
 
-# print(mytemplate.render(topics=("Python GUIs","Python IDEs","Python web scrapers")))
+abc_4 = """PN 1 "30249016" CR 2 "G" PY 1 "20" PW 1 "20" SN 2 "0110054179410008" MI 1 "S" RI 1 "R" """
 
-report_template = None
-with open("test_report.html", mode='r') as fh:
-    report_template = Template(fh.read())
+abc_5 = "0030261636/0H/2128/0110065210150287CR0"
 
-def create_test_record(test_group:str, test_name:str, test_status:str, lower_limit:str, upper_limit:str, measurement:str, measure_unit:str, cost_time:str):
-    return dict(test_group=test_group, 
-                test_name=test_name, 
-                test_status=test_status, 
-                lower_limit=lower_limit,
-                upper_limit=upper_limit,
-                measurement=measurement,
-                measure_unit=measure_unit,
-                cost_time=cost_time)
+# print(abc[15:31])
 
-table_rows = []
-table_rows.append(create_test_record("Voltage Test", "TP62(3.5V)", "FAIL", "3.325", "3.675", "-0.001", "V", "19.886183"))
-table_rows.append(create_test_record("Voltage 2", "TP62(3.5V)", "FAIL", "3.325", "3.675", "-0.001", "V", "19.886183"))
-table_rows.append(create_test_record("Voltage 5", "TP62(3.5V)", "FAIL", "3.325", "3.675", "-0.001", "V", "19.886183"))
+abc_3="0000006543210123"
 
-data = {title:"Test Results For Serial Number: 6a443f Executed At 2021-05-24 09:27:32",
-serial_num:"6a443f",
-start_time="2021-05-24 09:27:32",
-stop_time="2021-05-24 09:28:20",
-test_station="UN",
-test_operator="TEST",
-test_cell="0",
-test_result="ABORT",
-test_script="D:/yang/testcode/TestScipt/EpdsTestPlatform_V0.0.5/TestScript/Wireless_in_Scale_V1.0.2.py",
-elapsed_time="47.124538s",
-total_execu_time=" 47.124538",
-table_rows=table_rows}
+ff=re.findall("/(\d{16})", abc_5)
 
-rst = report_template.render()
-
-# =[{test_group: "Voltage Test", test_name: "TP62(3.5V)"},
-# {test_group: "Voltage Test2", test_name: "TP62(3.5V)2"}]
-
-with open('report.html', 'w') as fh:
-    fh.write(rst)
-
-
-
-
+d=abc_2.split('/')[-1].split('S')[0]
+print(ff)
