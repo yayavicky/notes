@@ -63,7 +63,6 @@ IdentityFile C:\Users\vicky\.ssh\id_rsa_rhyme
 
 ```shell
 ssh -T git@yaya
-
 ```
 
 ### 4. 使用新的公私钥
@@ -74,4 +73,18 @@ git clone git@github.com:yayavicky/notes.git
 
 # actual use
 git clone git@yaya:yayavicky/notes.git
+git git@yaya:yayavicky/EpdsTestPlatform.git
 ```
+
+## tag
+
+```shell
+git tag -l
+
+git push origin --tags
+git push origin tagname
+
+git branch -d gu
+git push origin --delete gu
+```
+
