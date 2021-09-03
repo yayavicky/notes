@@ -91,8 +91,8 @@ pip install virtualenvwrapper-win
 配置 先 find 一下 `virtualenvwrapper.sh` 文件的位置
 
 ```shell
-find / -name virtualenvwrapper.sh
-# /usr/bin/virtualenvwrapper.sh
+sudo find / -name virtualenvwrapper.sh
+/home/vicky/.local/bin/virtualenvwrapper.sh
 ```
 
 若是 windows 则使用everything 查找 `virtualenvwrapper.bat` 脚本
@@ -108,6 +108,8 @@ C:\Python37\Scripts\virtualenvwrapper.bat
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/workspace
 export VIRTUALENVWRAPPER_SCRIPT=/usr/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_SCRIPT=/home/vicky/.local/bin/virtualenvwrapper.sh
+
 source /usr/bin/virtualenvwrapper.sh
 ```
 
