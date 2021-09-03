@@ -14,7 +14,7 @@ typora-root-url: answer
 
 ### 1. 复制 `F:\sources\install.wim`
 
-### 2. 打开安装好的"**Windows System Inage Mannager**",下面简称“**WIM**”
+### 2. 打开安装好的"**Windows System Image Mannager**",下面简称“**WIM**”
 
 ![image-20210823103047335](./windows_Kits)
 

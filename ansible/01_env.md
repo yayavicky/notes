@@ -26,4 +26,11 @@ pip install --user virtualenv
 >WARNING: The script virtualenv is installed in '/home/vicky/.local/bin' which is not on PATH.
 >Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
 
-`
+
+
+## Hy
+
+```powershell
+DISM /Online /Enable-Feature /All /FeatureName:Microsoft-Hyper-V
+```
+
